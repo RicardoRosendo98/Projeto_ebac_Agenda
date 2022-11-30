@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agenda de contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/icon_de_agenda.png" alt="caderno de agenda">
+            <h1>agenda de contatos</h1>
+        </header>
+    <form id="form-contact">
+        <input type="text" id="contato-nome" required placeholder="Nome do contato">
+        <input type="tel" id="numero-contato" pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}" required placeholder="Tel: contato">
+        <button type="submit">Salvar</button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <th>
+                Nome do contato
+            </th>
+            <th>Número do contato</th>
+            <th>Salvo</th>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="nome-contato">Ex: joão</td>
+                <td id="numero-salvo">(00)9999-3333</td>
+                <td id="salvo-com-sucesso"><img src="/imagens/check_icon_green.png" alt="Icon check"></td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
